@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  font-size: 36px;
+  color: #fff;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+  transition: 0.3s;
+}
+
+.square {
+  position: absolute;
+  top: 50px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid black;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.red {
+  background-color: tomato;
+  left: 20%;
+}
+
+.blue {
+  background-color: royalblue;
+  left: 40%;
+}
+
+.green {
+  background-color: greenyellow;
+  left: 60%;
+}
+
+.gold {
+  background-color: gold;
+  left: 80%;
+}
+
+.red:hover ~ .bg {
+  background-color: tomato;
+}
+
+.blue:hover ~ .bg {
+  background-color: royalblue;
+}
+
+.green:hover ~ .bg {
+  background-color: greenyellow;
+}
+
+.gold:hover ~ .bg {
+  background-color: gold;
+}

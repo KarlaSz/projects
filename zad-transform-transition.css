@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: monospace;
+}
+
+div {
+  border: 2px solid #000;
+  line-height: 60px;
+}
+
+.long {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 400px);
+  width: 800px;
+  height: 60px;
+  background-color: tomato;
+  font-size: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.long:hover {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 200px);
+  transform: scale(2);
+  width: 400px;
+  background-color: gold;
+}
+
+.short-size {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+}
+
+.short {
+  top: 180px;
+  left: calc(50% - 150px);
+  background-color: royalblue;
+  border-radius: 25px;
+  font-size: 20px;
+  text-align: center;
+  transition: transform 1s linear;
+}
+
+.short:hover {
+  transform: rotate(360deg);
+}
+
+.short-twins {
+  top: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.short2 {
+  left: calc(30% - 150px);
+  background-color: gold;
+  font-size: 20px;
+  transition: transform 1s 1s ease-out;
+}
+
+.short3 {
+  left: calc(70% - 150px);
+  background-color: lime;
+  font-size: 20px;
+  transition: 1s 1s cubic-bezier(0.41, 0.4, 0, 2);
+}
+
+.short:hover ~ .short2 {
+  transform: rotate(360deg);
+}
+
+.short:hover ~ .short3 {
+  transform: rotate(-360deg);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  background: none;
+  line-height: 200px;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.center:hover {
+  background-color: #fff;
+}

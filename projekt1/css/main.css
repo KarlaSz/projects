@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* nawigacja */
+.nav {
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  line-height: 50px;
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-item a {
+  color: #fff;
+  padding: 0 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.nav-item a:hover {
+  color: royalblue;
+}
+
+/* header */
+
+.header-img {
+  position: relative;
+  height: 250px;
+  background-image: url("../img/fantasy.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: 0 50%;
+}
+
+.header-txt {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+}
+
+.header-txt h1 {
+  margin-bottom: 10px;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.header-txt p {
+  font-size: 22px;
+}
+
+.header-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(13, 145, 165, 0.683);
+}
+
+/* main */
+
+main {
+  width: 1100px;
+  margin: 50px auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-us-box {
+  margin: 40px 0;
+  position: relative;
+  height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+
+.top {
+  background-image: url(../img/computer-work.jpg);
+}
+
+.middle {
+  background-image: url(../img/mobile3d.jpg);
+}
+
+.bottom {
+  background-image: url(../img/office-work.jpg);
+}
+
+.about-us-txt {
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.about-us-bg {
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.about-us-txt h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* footer  */
+
+footer {
+  height: 80px;
+  line-height: 75px;
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  font-size: 20px;
+}
+
+.icon-box a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 25px;
+}
+
+.icon-box a:hover {
+  color: rgba(13, 145, 165, 0.683);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  main {
+    width: 850px;
+    margin: 50px auto;
+  }
+
+  .header-txt {
+    width: 450px;
+    text-align: center;
+  }
+
+  .header-txt h1 {
+    font-size: 33px;
+  }
+  .header-txt p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  main {
+    width: 700px;
+    margin: 50px auto;
+  }
+
+  .header-txt {
+    width: 450px;
+    text-align: center;
+  }
+
+  .header-txt h1 {
+    font-size: 33px;
+  }
+  .header-txt p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  main {
+    width: 510px;
+    margin: 50px auto;
+  }
+
+  .header-txt {
+    width: 350px;
+    text-align: center;
+  }
+  .header-txt h1 {
+    font-size: 27px;
+  }
+  .header-txt p {
+    font-size: 18px;
+  }
+
+  .nav-item a {
+    padding: 0 30px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 576px) {
+  main {
+    width: 340px;
+    margin: 50px auto;
+  }
+
+  .header-txt {
+    width: 300px;
+    text-align: center;
+  }
+
+  .header-txt h1 {
+    font-size: 23px;
+  }
+  .header-txt p {
+    font-size: 16px;
+  }
+
+  .nav-item a {
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .about-us-bg {
+    height: 45%;
+  }
+  .about-us-txt {
+    bottom: -2px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+.services-list {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.prices-table {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  background-color: #333333;
+  color: #ddd;
+  padding: 10px 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.prices-table td {
+  padding: 10px 30px;
+}
+
+.contact-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-box p {
+  margin-bottom: 15px;
+}
+
+.contact-box i {
+  margin-right: 10px;
+}
+
+.contact-box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-box a:hover {
+  color: rgba(13, 145, 165, 0.683);
+  font-weight: 600;
+}

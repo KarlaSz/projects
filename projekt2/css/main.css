@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* //do anchora zeby byl gladki */
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.hero-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 400px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero-txt h1 {
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 5px #000;
+  color: #ddd;
+  letter-spacing: 2px;
+}
+
+.hero-txt span {
+  text-transform: uppercase;
+  color: #09f;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section {
+  scroll-margin-top: 70px; /*  //po to zeby nav nie najezdzala na tekst przy anchorach */
+}
+
+/* nawigacja */
+nav {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ddd;
+  text-align: center;
+  z-index: 10;
+}
+
+.burger-icon {
+  display: block;
+  margin-left: auto;
+  padding: 0 30px;
+  background: none;
+  font-size: 30px;
+  line-height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-icon:hover {
+  background-color: #8e8d8d81;
+}
+
+.nav-items {
+  display: none;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  background-image: url("../img/hero-sm.jpg");
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* main */
+
+main {
+  margin: 60px 0;
+  height: 100%;
+}
+
+.about-us-info {
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+/* //produkty  */
+.products {
+  margin: 60px auto;
+  position: relative;
+  height: 630px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.products h3 {
+  text-transform: uppercase;
+}
+
+.product {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.product h3 {
+  text-transform: uppercase;
+  transition: transform 0.3s;
+}
+
+.product:hover h3 {
+  transform: scale(1.2);
+}
+
+.first-product {
+  background-image: url("../img/homeschoolingjpg.jpg");
+}
+
+.second-product {
+  background-image: url("../img/technology.jpg");
+}
+
+.third-product {
+  background-image: url("../img/computer-work.jpg");
+}
+
+.fourth-product {
+  background-image: url("../img/hands.jpg");
+}
+
+.contact {
+  margin: 20px auto;
+  height: 160px;
+  text-align: center;
+}
+
+/* kontakt */
+
+.contact h3 {
+  margin: 20px 0 15px;
+}
+
+.contact h2 {
+  margin: 50px 0 5px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #ddd;
+  /* line-height: 60px; */
+}
+
+/* //breakpoint pod mniejsze ekrany */
+@media (min-width: 300px) {
+  .header {
+    background-image: url("../img/hero-big.jpg");
+    height: 300px;
+  }
+
+  .hero-txt {
+    width: 250px;
+  }
+  .hero-txt h1 {
+    font-size: 18px;
+  }
+  .hero-txt p {
+    font-size: 16px;
+  }
+  .products {
+    height: 1200px;
+  }
+}
+
+@media (min-width: 568px) {
+  .hero-txt {
+    width: 380px;
+  }
+
+  .hero-txt h1 {
+    font-size: 35px;
+  }
+  .hero-txt p {
+    font-size: 18px;
+  }
+  .products {
+    height: 1200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+  }
+
+  .nav-items a {
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+  }
+  .nav-items a:hover {
+    color: #09f;
+  }
+
+  .header {
+    background-image: url("../img/hero-big.jpg");
+    height: 400px;
+  }
+
+  .hero-txt {
+    width: 300px;
+  }
+
+  .hero-txt h1 {
+    font-size: 36px;
+  }
+  .hero-txt p {
+    font-size: 18px;
+  }
+  .products h3 {
+    font-size: 24px;
+  }
+  .products {
+    height: 1200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .products-box {
+    font-size: 0;
+    height: 100%;
+  }
+
+  .product {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .products h3 {
+    font-size: 24px;
+    /* width: 596px; */
+  }
+  .hero-txt {
+    width: 300px;
+  }
+
+  .products {
+    height: 620px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-txt {
+    width: 300px;
+  }
+
+  .hero-txt h1 {
+    font-size: 44px;
+  }
+  .hero-txt p {
+    font-size: 22px;
+  }
+  .products {
+    height: 620px;
+  }
+}
