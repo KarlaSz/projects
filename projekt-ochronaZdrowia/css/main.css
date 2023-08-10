@@ -284,13 +284,12 @@ main {
   ); */
   /* background-color: #a40606; */
   /* background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); */
-  background-color: #861657;
+  background-color: #795f6e;
   background-image: linear-gradient(315deg, #ffffff 0%, #ded5d8 90%);
-
   overflow: hidden;
   background-size: 100%;
   animation: contact 6s linear infinite;
-  box-shadow: 0 0 90px 15px #86165770;
+  box-shadow: 0 0 90px 15px #795f6e;
   border-radius: 50%;
 }
 
