@@ -1,12 +1,15 @@
 # projects
 Pages:
-1. https://karlasz.github.io/projects/projekt1/index 
-2. https://karlasz.github.io/projects/projekt2/index
+1. https://karlasz.github.io/projects/projekt-ochronaZdrowia/index
+2. https://karlasz.github.io/projects/projekt-protfolio/index
 
-   Layouts:
-4. https://karlasz.github.io/projects/zad-media
-5. https://karlasz.github.io/projects/zad-transform-transition
-6. https://karlasz.github.io/projects/zad-position3
-7. https://karlasz.github.io/projects/zad-position2
-8. https://karlasz.github.io/projects/zad-position
-9. https://karlasz.github.io/projects/zad-media
+Animation:
+1. https://karlasz.github.io/projects/outdoor-animacja
+
+   Test layouts:
+1. https://karlasz.github.io/projects/zad-media
+2. https://karlasz.github.io/projects/zad-transform-transition
+3. https://karlasz.github.io/projects/zad-position3
+4. https://karlasz.github.io/projects/zad-position2
+5. https://karlasz.github.io/projects/zad-position
+6. https://karlasz.github.io/projects/zad-media
