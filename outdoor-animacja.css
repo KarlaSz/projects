@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  height: 500px;
+  background-color: royalblue;
+  animation: sky 7s linear infinite;
+}
+
+.sun {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 70px 10px gold; //0 przeusnie na osi x i y i 3 px do rozmycia
+  animation: sun 7s linear infinite;
+}
+
+.cloud {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  width: 350px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50% 40% 50% 40%;
+  box-shadow: 0 0 30px aqua;
+  animation: cloud 7s linear infinite;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 90px;
+  right: 40px;
+  width: 400px;
+  height: 100px;
+  background-color: rgb(5, 236, 236);
+  border-radius: 70% 60% 50% 50%;
+  box-shadow: 0 0 30px aqua;
+}
+.ground {
+  position: relative;
+}
+
+.grass {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: lime;
+  height: 200px;
+}
+
+.road {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 32;
+  width: 100%;
+  height: 120px;
+  background-color: #868585;
+}
+
+.car {
+  position: relative;
+  top: 0;
+  left: 150px;
+  width: 150px;
+  height: 80px;
+  background-color: tomato;
+  border-radius: 20px;
+  animation: car 4s linear infinite;
+}
+
+.window {
+  width: 50px;
+  height: 30px;
+  background-color: blue;
+}
+
+.front-window {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border-top-right-radius: 20px;
+}
+
+.rear-window {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  border-top-left-radius: 20px;
+}
+
+.car::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 36px;
+  width: 208px;
+  height: 40px;
+  background-color: tomato;
+  border-top-right-radius: 20px;
+}
+
+.wheel {
+  position: absolute;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px dashed rgb(166, 166, 166);
+  z-index: 3;
+  transition: transform 4s linear;
+  animation: wheel 7s linear infinite;
+}
+
+.front-wheel {
+  right: 0;
+}
+.rear-wheel {
+  left: 0;
+}
+
+@keyframes sky {
+  0% {
+    background-color: rgb(4, 24, 83);
+  }
+
+  40% {
+    background-color: royalblue;
+  }
+  60% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: rgb(4, 24, 83);
+  }
+}
+
+@keyframes sun {
+  0% {
+    top: 550px;
+  }
+  40% {
+    top: 100px;
+  }
+  60% {
+    top: 100px;
+  }
+  100% {
+    top: 550px;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    top: 100px;
+    transform: scale(0.9);
+  }
+  60% {
+    top: 100px;
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes car {
+  0% {
+    left: 150px;
+  }
+  50% {
+    left: 750px;
+  }
+  100% {
+    left: 2950px;
+  }
+}
+
+@keyframes wheel {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
