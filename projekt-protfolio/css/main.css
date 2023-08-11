@@ -318,7 +318,6 @@ h2 {
 
 .services-list {
   margin: 0 auto;
-  width: 800px;
   letter-spacing: 2px;
   text-align: center;
   list-style-position: inside;
@@ -357,7 +356,6 @@ h2 {
 
 .prices-table {
   margin: 0 auto;
-  width: 600px;
   text-align: center;
   font-size: 20px;
   /* background-color: #333333; */
@@ -480,6 +478,36 @@ footer {
     width: 100%;
     height: 250px;
   }
+
+  .services-list {
+    width: 290px;
+  }
+
+  .table-prices {
+    margin: 0 auto;
+  }
+
+  .prices-table {
+    width: 280px;
+  }
+  .prices-table td {
+    padding: 10px 5px;
+  }
+
+  .contact-img {
+    width: 100%;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+  }
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact-box {
+    margin: 30px auto;
+  }
 }
 
 @media (min-width: 400px) {
@@ -498,6 +526,19 @@ footer {
 
   footer {
     height: 80px;
+  }
+
+  .services-list {
+    width: 400px;
+  }
+
+  .table-prices {
+    margin: 0 auto;
+  }
+
+  .prices-table {
+    width: 390px;
+    padding: 30px 30px;
   }
 }
 
@@ -553,6 +594,19 @@ footer {
 
   footer {
     height: 80px;
+  }
+
+  .services-list {
+    width: 500px;
+  }
+
+  .table-prices {
+    margin: 0 auto;
+  }
+
+  .prices-table {
+    width: 520px;
+    padding: 20px 20px;
   }
 }
 
@@ -642,6 +696,20 @@ footer {
   .boxes-content-skill {
     width: 200px;
     height: 200px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .contact-img {
+    width: 100%;
+    background-position: 0 40%;
+  }
+  .contact-box {
+    margin: 30px 20px;
   }
 }
 
