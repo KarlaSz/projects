@@ -122,11 +122,10 @@ h2 {
   bottom: 5px;
   text-align: center;
   color: #fff;
-  padding: 20px 40px;
 }
 
 .about-us-bg {
-  height: 45%;
+  height: 35%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -433,10 +432,11 @@ footer {
   }
 
   .about-us-bg {
-    height: 75%;
+    height: 65%;
   }
   .about-us-txt {
-    bottom: -2px;
+    bottom: 8px;
+    padding: 10px 10px;
   }
 
   .about-me {
@@ -456,8 +456,9 @@ footer {
   }
 
   .boxes-content-skill {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+    margin: 7px;
   }
 
   .skills {
@@ -465,7 +466,7 @@ footer {
   }
 
   .skill-txt {
-    top: 40%;
+    top: 25%;
     font-size: 15px;
   }
 
@@ -476,7 +477,7 @@ footer {
     align-items: center;
     font-size: 16px;
     width: 100%;
-    height: 250px;
+    height: 160px;
   }
 
   .services-list {
@@ -585,6 +586,11 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px 0;
+  }
+
+  .skill-txt {
+    top: 35%;
+    font-size: 18px;
   }
 
   .boxes-content-skill {
