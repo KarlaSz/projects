@@ -50,6 +50,7 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 70% 60% 50% 50%;
   box-shadow: 0 0 30px rgb(224, 228, 228);
+  animation: cloud2 7s linear infinite;
 }
 .ground {
   position: relative;
@@ -59,7 +60,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: lime;
+  background-color: rgb(16, 88, 16);
   height: 200px;
 }
 
@@ -71,6 +72,7 @@ body {
   width: 100%;
   height: 120px;
   background-color: #868585;
+  box-shadow: 0 0 20px #f9f8f8;
 }
 
 .car {
@@ -79,7 +81,7 @@ body {
   left: 150px;
   width: 150px;
   height: 80px;
-  background-color: tomato;
+  background-color: rgb(255, 230, 71);
   border-radius: 20px;
   animation: car 4s linear infinite;
 }
@@ -87,7 +89,7 @@ body {
 .window {
   width: 50px;
   height: 30px;
-  background-color: blue;
+  background-color: rgb(40, 40, 61);
 }
 
 .front-window {
@@ -111,7 +113,7 @@ body {
   top: 36px;
   width: 208px;
   height: 40px;
-  background-color: tomato;
+  background-color: rgb(255, 230, 71);
   border-top-right-radius: 20px;
 }
 
@@ -122,7 +124,7 @@ body {
   height: 40px;
   background-color: black;
   border-radius: 50%;
-  border: 2px dashed rgb(166, 166, 166);
+  border: 4px dashed rgb(219, 216, 216);
   z-index: 3;
   transition: transform 4s linear;
   animation: wheel 7s linear infinite;
@@ -183,6 +185,25 @@ body {
   }
 }
 
+@keyframes cloud2 {
+  0% {
+    right: 150px;
+  }
+  40% {
+    top: 150px;
+    right: 550px;
+  }
+  60% {
+    right: 600px;
+  }
+  80% {
+    right: 500px;
+  }
+  100% {
+    right: 250px;
+  }
+}
+
 @keyframes car {
   0% {
     left: 150px;
@@ -191,7 +212,7 @@ body {
     left: 750px;
   }
   100% {
-    left: 2950px;
+    left: 1950px;
   }
 }
 
