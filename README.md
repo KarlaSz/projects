@@ -4,7 +4,7 @@ Pages:
 2. https://karlasz.github.io/projects/projekt-protfolio/index
 
 Animation:
-1. https://karlasz.github.io/projects/outdoor-animacja
+1. https://karlasz.github.io/projects/animation/outdoor-animacja
 
    Test layouts:
 1. https://karlasz.github.io/projects/zad-media
