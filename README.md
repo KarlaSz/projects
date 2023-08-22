@@ -1,7 +1,8 @@
 # projects
 Pages:
-1. https://karlasz.github.io/projects/projekt-ochronaZdrowia/index
-2. https://karlasz.github.io/projects/projekt-protfolio/index
+1. https://karlasz.github.io/projects/kominiarstwo/index
+2. https://karlasz.github.io/projects/projekt-ochronaZdrowia/index
+3. https://karlasz.github.io/projects/projekt-protfolio/index
 
 Animation:
 1. https://karlasz.github.io/projects/animation/outdoor-animacja
