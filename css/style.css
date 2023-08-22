@@ -164,7 +164,7 @@ header.hero-img .fa-angles-down {
 
 .aboutus-img {
   position: relative;
-  background-image: url("../kominiarstwo/img/kominy-tlo.jpg");
+  background-image: url("../img/kominy-tlo.jpg");
   background-size: cover;
   z-index: 0;
   color: #fff;
@@ -239,7 +239,7 @@ header.hero-img .fa-angles-down {
 
 .team {
   position: relative;
-  background-image: url("../kominiarstwo/img/kominy-domy.jpg");
+  background-image: url("../img/kominy-domy.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
